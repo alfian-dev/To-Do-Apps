@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>simple To Do Apps</title>
+    <!-- Reset -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;700;800&family=Montserrat:wght@100;200;400;600;800&family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Main Css -->
+    <link rel="stylesheet" href="app.css" />
+  </head>
+  <body>
+    <header id="main-header">
+      <div class="container">
+        <h1>Today</h1>
+        <form action="" id="todo-form">
+          <input
+            type="text"
+            name="task-name"
+            placeholder="e.g Buy groceries"
+            autofocus
+          />
+          <button type="submit">Add task</button>
+        </form>
+      </div>
+    </header>
+
+    <!-- Main Section Start -->
+    <section>
+      <div id="main-content" class="container">
+        <ul class="stats">
+          <li>
+            <span>Remaining</span>
+            <span id="remaining-task">0</span>
+          </li>
+          <li>
+            <span>Completed</span>
+            <span id="completed-task">0</span>
+          </li>
+          <li>
+            <span>Total</span>
+            <span id="total-task">0</span>
+          </li>
+        </ul>
+        <ul class="todos">
+          <li>
+            <div>
+              <input type="checkbox" name="tasks" id="1" />
+              <span contenteditable>Task 1</span>
+            </div>
+            <button title="remove-task" class="remove-task">
+              <svg
+                class="w-6 h-6 text-gray-800 dark:text-white"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 14 14"
+              >
+                <path
+                  stroke="#1c89b8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1"
+                  d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"
+                />
+              </svg>
+            </button>
+          </li>
+          <li class="complete">
+            <div>
+              <input type="checkbox" name="tasks" id="1" />
+              <span>Task 2</span>
+            </div>
+            <button title="remove-task" class="remove-task">
+              <svg
+                class="w-6 h-6 text-gray-800 dark:text-white"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 14 14"
+              >
+                <path
+                  stroke="#1c89b8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1"
+                  d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"
+                />
+              </svg>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- Main Section End -->
+
+    <!-- Footer Section Start -->
+    <footer>
+      <div class="container">
+        <p>
+          <small
+            >Design by
+            <a href="https://adipurdila.com/" target="_blank">Adi Purdila</a>
+            code by <a href="https://adipurdila.com/">Adi Purdila</a> and
+            <a href="https://georgemartsoukos">Geroge Martsoukos</a> and rebuild
+            by <a href="">Alfian</a></small
+          >
+        </p>
+      </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Javascript -->
+    <script src="app.js"></script>
+  </body>
+</html>
